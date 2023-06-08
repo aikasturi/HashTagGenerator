@@ -1,0 +1,52 @@
+* {box-sizing: border-box}
+body{
+    text-align: center;
+}
+#hashtag{
+    border-radius:4px;
+    font-size:15px;
+    padding:15px;
+    margin:5px;
+    width: 500px;
+    height: 50px;
+    color: #89abeb;
+    
+}
+#newHashtag{
+    padding:15px;
+    margin:5px;
+    color: #b84389;
+}
+
+h1{
+    margin: auto;
+    padding:15px;
+    font-size:30px;
+    color: #1153c6;
+}
+button{
+    display:inline-block;
+    width: 80px;
+    height: 40px;
+}
+p{
+    margin: auto;
+    padding:15px;
+    font-size:20px;
+    color: #1eafc8cd;
+}
+
+#generator{
+    padding:15px;
+    margin:5px;
+    background-color: rgb(56, 165, 56);
+    color:white;
+    
+}
+
+#reset{
+    padding:15px;
+    margin:5px;
+    background-color: rgb(193, 39, 39);
+    color:black;
+}
