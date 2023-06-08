@@ -17,16 +17,14 @@ function hashtagGenerator(stringvalue) {
 
     return result;
 } 
-
-var inputValue = document.getElementById("hashtag").value;
+var input = document.getElementById("hashtag");
 var generate = document.getElementById("generator");
 var output = document.getElementById("newHashtag");
 var reset = document.getElementById("reset");
 const GENERATED_HASHTAG_SIZE_LIMIT = 140;
 
 generate.addEventListener("click", function() {
-    var inputValue = document.getElementById("hashtag").value;
-    newHashtag = hashtagGenerator(inputValue);
+    newHashtag = hashtagGenerator(input.value);
     if (newHashtag.length <= GENERATED_HASHTAG_SIZE_LIMIT){
         output.textContent=newHashtag
     }
@@ -37,10 +35,9 @@ generate.addEventListener("click", function() {
 
 reset.addEventListener("click", function() {
     // resetting the input text box, when user clicks reset button
-    if(reset.value != ""){
-        reset.value= "";
-    }
-});
+        input.value = "";
+        output.textContent = "";
+})
 
 
 
